@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.drag {
+  -webkit-user-select: none;
+  -webkit-app-region: drag;
+}
+::-webkit-scrollbar {
+        width: 10px;
+        position: absolute;
+        background-color: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+        background-color: #555;
+        border-radius: 10px;
+        border: 2px solid #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+    ::-webkit-scrollbar {
+        background-color: #000000;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: #555;
+        border-color: #000000;
+    }
+}
+  
