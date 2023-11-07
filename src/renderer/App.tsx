@@ -13,8 +13,8 @@ export default function App() {
     setIsOpen(!isOpen);
   };
   return (
-    <div className="h-screen flex dark:bg-[#242529] bg-white dark:text-white">
-      <div className="w-full absolute h-[10px] top-0 drag" />
+    <div className="h-screen flex dark:bg-[#242529] font-inter bg-white dark:text-white">
+      <div className="w-full absolute h-[10px] drag top-0 " />
 
       <Router>
         <div>

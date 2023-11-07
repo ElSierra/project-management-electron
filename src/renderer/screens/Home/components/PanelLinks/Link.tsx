@@ -28,7 +28,7 @@ export default function Link({
         className={`flex ${
           name.toLocaleLowerCase() === location.pathname.split('/')[1] ||
           location.pathname === href
-            ? 'bg-gray-100 dark:bg-gray-700 text-black dark:text-white'
+            ? 'bg-gray-100 dark:bg-gray-700 text-primary-800 dark:text-primary-500'
             : ''
         } duration-300 hover:scale-[97%] hover:transform items-center transition-all  p-2 text-gray-900 rounded-lg dark:text-[grey] hover:dark:text-white hover:text-black hover:bg-gray-100 dark:hover:bg-gray-700 group`}
       >

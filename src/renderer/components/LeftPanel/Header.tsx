@@ -11,7 +11,7 @@ export default function Header({
 }) {
   return (
     <div
-      className={` flex justify-between ${
+      className={` transition-all   flex justify-between ${
         isOpen ? 'w-[65px]' : 'w-[240px]'
       }   items-center `}
     >
@@ -28,7 +28,7 @@ export default function Header({
       </div>
       <button
         onClick={onClick}
-        className={`transition-all rounded-full p-2 ${
+        className={`transition-all rounded-full p-2 mr-4 ${
           isOpen ? 'hidden' : ''
         } duration-300 hover:scale-90 hover:transform hover:bg-[#7e7b7bb7] focus:outline-none `}
       >

@@ -5,5 +5,5 @@ export default function Box({
   children: React.ReactNode;
   className?: string;
 }) {
-  return <div className={`w-full ${className}`}>{children}</div>;
+  return <div className={`w-full pt-[80px] p-6 ${className}`}>{children}</div>;
 }

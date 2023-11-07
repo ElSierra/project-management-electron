@@ -20,7 +20,7 @@ export default function LeftPanel({
   onClick: () => void;
 }) {
   return (
-    <div className=" flex">
+    <div className=" flex overflow-x-hidden">
       <aside
         id="logo-sidebar"
         className={`  pt-[40px]  top-0 left-0 z-40 w-64 min-h-screen ${
@@ -28,7 +28,7 @@ export default function LeftPanel({
         }  transition-all -translate-x-full duration-500 bg-white border-r border-gray-200 sm:translate-x-0  dark:bg-[#242529] dark:border-gray-700`}
         aria-label="Sidebar"
       >
-        <div className=" px-3 pb-4 overflow-y-auto pt-10 bg-white dark:bg-[#242529]">
+        <div className=" px-3 pb-4 overflow-y-auto overflow-x-hidden pt-10 bg-white dark:bg-[#242529]">
           <ul className="space-y-2 font-medium">
             <Link Icon={Category} name="Home" href="/" isOpen={isOpen} />{' '}
             <Link
