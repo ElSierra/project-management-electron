@@ -8,6 +8,15 @@
   -webkit-user-select: none;
   -webkit-app-region: drag;
 }
+:not(input):not(textarea),
+:not(input):not(textarea)::after,
+:not(input):not(textarea)::before {
+    -webkit-user-select: none;
+    user-select: none;
+}
+input, button, textarea, :focus {
+    outline: none;
+}
 ::-webkit-scrollbar {
         width: 10px;
         position: absolute;
